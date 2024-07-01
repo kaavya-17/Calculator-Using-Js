@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+/* h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+} */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  background-image: url(https://wallpapercave.com/wp/TCSCgjV.jpg);
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  /* box-shadow: rgba(1, 1, 1, 0.24) 0px 3px 8px; */
+  background-color: gray;
+}
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: black;
+  background-color: white;
+  pointer-events: none;
+}
+.container h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.buttons button:active {
+  transform: scale(0.89);
+}
+.buttons .operator {
+  color: white;
+  background-color: black;
+}
